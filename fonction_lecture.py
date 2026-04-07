@@ -4,7 +4,7 @@ import message
 ajd = datetime.date.today()
 ajd = str(ajd)
 ajd = ajd.replace("-", "")
-print(ajd)
+
 message.next_col()
 fichier = "calendrier_collecte.ics"
 k=0
@@ -12,10 +12,11 @@ contenu_ligne=[]
 line_no=0
 debut=[]
 with open(fichier, 'r') as file:
+
     line = file.readlines()
-    for line_no in line: 
-           
-        contenu_ligne=line[line_no].split(":")      
+
+    for line_no in line:            
+        contenu_ligne = line[line_no].split(":")      
         if(contenu_ligne[0] == "SUMMARY" and bac1_found == True):
             bac1_nom = contenu_ligne[1]
             bac2_trig = True
@@ -35,5 +36,7 @@ with open(fichier, 'r') as file:
             bac2_date = bac2_time[0]
             if(bac2_date >= ajd):
                 bac2_found = True
+        elif(final == True) : break
+file.close()    
 
 
