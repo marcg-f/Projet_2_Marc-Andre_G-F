@@ -36,12 +36,4 @@ with open(fichier, 'r') as file:
             if(bac2_date >= ajd):
                 bac2_found = True
 
-        deuxieme = contenu_ligne[13+k]
-        deuxieme = contenu_ligne.split(":")
-        if(deuxieme[0] == "DTSTART"):
-            time = deuxieme[1].split("T")
-            date_2 = time[0]
-            if(date_2 == date):
-                bac_info_2 = contenu_ligne[15+k].split(":")
-                bac_nom_2 = bac_info_2[0]
 
