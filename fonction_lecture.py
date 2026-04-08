@@ -11,6 +11,9 @@ def lecture_col():
     fichier = "calendrier_collecte.ics"
     contenu_ligne = [] 
     final = 0
+    bac2_trig = 0
+    bac1_found = 0
+    bac2_found = 0
     with open(fichier, 'r') as file:
 
         line = file.readlines()

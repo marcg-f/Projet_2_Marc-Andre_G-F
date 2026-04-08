@@ -12,19 +12,18 @@ def menu():
 def next_col():
     choix = input("Voulez-vous voir si la prochaine collecte est celle des déchets, du composte ou recyclage? O/N\n")
     choix = choix.upper()
-    while(choix != "O"):
-        choix = input("Entrée inconnue! \nVVoulez-vous voir si la prochaine collecte est celle des déchets, du composte ou recyclage? O/N\n")
+    while(choix != "O" and choix != "N"):
+        choix = input("Entrée inconnue! \nVoulez-vous voir si la prochaine collecte est celle des déchets, du composte ou recyclage? O/N\n")
         choix = choix.upper()
-        if(choix == "N"): break    
+ 
     return choix
 
 def info_col(bac1_nom, bac2_nom):
     anwser = input(F"La prochaine collecte du mercredi sera le bac de {bac1_nom} et de {bac2_nom} \nVoulez-vous envoyer le calendrier au bac à recyclage? O/N")
     anwser = anwser.upper()
-    while(anwser != "O"):
+    while(anwser != "O" or anwser != "N"):
         anwser = input("Entrée inconnue!\nVoulez-vous envoyer le calendrier au bac à recyclage? O/N\n")
-        anwser = anwser.upper()
-        if(anwser == "N"): break    
+        anwser = anwser.upper()  
     return anwser
 
 def titre_fichier():
@@ -41,8 +40,7 @@ def contenu_txt():
 def view_txt():
     anwser = input("Voulez-vous consulter votre fichier nouvellement créé? (O/N)")
     anwser = anwser.upper()
-    while(anwser != "O"):
+    while(anwser != "O" or anwser != "N"):
         anwser = input("Entrée inconnue!\nVoulez-vous consulter votre fichier nouvellement créé? (O/N)\n")
-        anwser = anwser.upper()
-        if(anwser == "N"): break    
+        anwser = anwser.upper() 
     return anwser
