@@ -11,7 +11,6 @@ def lecture_col():
     k=0
     contenu_ligne=[] 
     line_no=0
-    debut=[]
     with open(fichier, 'r') as file:
 
         line = file.readlines()
@@ -39,11 +38,13 @@ def lecture_col():
                     bac2_found = True
             elif(final == True) : break
     file.close() 
-    message.info_col(bac1_nom, bac2_nom)
-    if(message.info_col(bac1_nom, bac2_nom) == "O"):
+    delete = message.info_col(bac1_nom, bac2_nom)
+    if(delete == "O"):
         with open(fichier, 'w') as file:
-            
-    else: break
+            fichier.write("L'ancien fichier à été écrasé!\n")
+        fichier.close()
+    return
+    
 
 
 

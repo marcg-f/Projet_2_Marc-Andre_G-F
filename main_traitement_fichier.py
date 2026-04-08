@@ -6,10 +6,10 @@ while menu != "Q":
     menu=message.menu()
     match menu:
         case "A":
-            fonction_lecture.roulette_russe() 
+            fonction_lecture.lecture_col() 
 
         case "B":
-            jeux_repertoire.pile_face()    
+                
 
         case "C":            
-            jeux_repertoire.courte_paille()
+           
