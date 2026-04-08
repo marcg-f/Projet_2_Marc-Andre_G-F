@@ -1,8 +1,7 @@
-
 import datetime
 import message
 def lecture_col():
-    ajd = datetime.date.today()
+    ajd = datetime.date.today() #Initialisation/préparation des variables
     ajd = str(ajd)
     ajd = ajd.replace("-", "")
     ajd = int(ajd)
@@ -13,8 +12,8 @@ def lecture_col():
     bac2_trig = 0
     bac1_found = 0
     bac2_found = 0
+
     try:
-    # On ESSAIE d'exécuter ce code
         with open(fichier, "r"):
             test = fichier.read()
             path_found = True
@@ -54,7 +53,7 @@ def lecture_col():
         if(delete == "O"):
             with open(fichier, 'w') as file:
                 fichier.write("L'ancien fichier à été écrasé!\n")
-            fichier.close()
+            file.close()
     return
     
 

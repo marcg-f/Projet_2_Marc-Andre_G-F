@@ -1,3 +1,15 @@
+"""
+**********************************************
+Auteur: Marc-André Grondin-Fournier
+But générales des fonctions: messages adaptés selon la situation et retour de choix sécurisés
+Nom du fichier: message.py
+**********************************************
+
+**********************************************
+Fonction menu principale
+Entré:Aucune
+Sortie:Choix sécurisés
+"""
 def menu():
     tracer = 0
     message = input("Voulez-vous acceder à votre calendrier de collecte de bacs, ou écrire/lire un nouveau fichier texte? \nA: Collecte de bacs \nB: Écrire un nouveau calendrier \nQ: Quitter \n" )
