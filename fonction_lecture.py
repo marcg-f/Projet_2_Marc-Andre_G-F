@@ -1,4 +1,4 @@
-import icalendar
+
 import datetime
 import message
 def lecture_col():
@@ -9,9 +9,7 @@ def lecture_col():
 
     message.next_col()
     fichier = "calendrier_collecte.ics"
-    k=0
-    contenu_ligne=[] 
-    line_no=0
+    contenu_ligne = [] 
     with open(fichier, 'r') as file:
 
         line = file.readlines()
