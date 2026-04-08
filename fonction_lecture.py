@@ -5,6 +5,7 @@ def lecture_col():
     ajd = datetime.date.today()
     ajd = str(ajd)
     ajd = ajd.replace("-", "")
+    ajd = int(ajd)
 
     message.next_col()
     fichier = "calendrier_collecte.ics"
@@ -28,12 +29,12 @@ def lecture_col():
                 bac2_trig = False
             elif(contenu_ligne[0] == "DTSTART" and bac2_trig == False):
                 bac1_time = contenu_ligne[1].split("T")
-                bac1_date = bac1_time[0]
+                bac1_date = int(bac1_time[0])
                 if(bac1_date >= ajd):
                     bac1_found = True
             elif(contenu_ligne[0] == "DTSTART" and bac2_trig == True):
                 bac2_time = contenu_ligne[1].split("T")
-                bac2_date = bac2_time[0]
+                bac2_date = int(bac2_time[0])
                 if(bac2_date >= ajd):
                     bac2_found = True
             elif(final == True) : break

@@ -9,7 +9,4 @@ while menu != "Q":
             fonction_lecture.lecture_col() 
 
         case "B":
-                
-
-        case "C":            
-           
+            ecriture_fichier.write_txt()    
