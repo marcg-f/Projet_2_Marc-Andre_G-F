@@ -10,12 +10,13 @@ def lecture_col():
     message.next_col()
     fichier = "calendrier_collecte.ics"
     contenu_ligne = [] 
+    final = 0
     with open(fichier, 'r') as file:
 
         line = file.readlines()
 
         for line_no in line:            
-            contenu_ligne = line[line_no].split(":")      
+            contenu_ligne = line_no.split(":")      
             if(contenu_ligne[0] == "SUMMARY" and bac1_found == True):
                 bac1_nom = contenu_ligne[1]
                 bac2_trig = True
