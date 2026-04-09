@@ -6,9 +6,9 @@ Nom du fichier: message.py
 **********************************************
 
 **********************************************
-Fonction menu principale
-Entré:Aucune
-Sortie:Choix sécurisés
+Fonction du message du menu principale
+Entré: Aucune
+Sortie: Choix sécurisés
 """
 def menu():
     tracer = 0
@@ -21,7 +21,14 @@ def menu():
             message = input("Entré inconnue! \nVoulez-vous acceder à votre calendrier de collecte de bacs, ou écrire un nouveau calendrier? \nA: Collecte de bacs \nB: Écrire un nouveau calendrier \nQ: Quitter \n" )
             message = message.upper()    
     return message
+"""
+**********************************************
 
+**********************************************
+Fonction de message pour confirmer la recherche
+Entré: Aucune
+Sortie: Choix sécurisés
+"""
 def next_col():
     choix = input("Voulez-vous voir si la prochaine collecte est celle des déchets, du composte ou recyclage? O/N\n")
     choix = choix.upper()
@@ -29,7 +36,14 @@ def next_col():
         choix = input("Entrée inconnue! \nVoulez-vous voir si la prochaine collecte est celle des déchets, du composte ou recyclage? O/N\n")
         choix = choix.upper() 
     return choix
+"""
+**********************************************
 
+**********************************************
+Fonction pour la réponse des prochains bacs à sortir
+Entré: bac1_nom, bac2_nom
+Sortie: Choix sécurisés
+"""
 def info_col(bac1_nom, bac2_nom):
     anwser = input(F"La prochaine collecte du mercredi sera le bac de {bac1_nom} et de {bac2_nom} \nVoulez-vous envoyer le calendrier au bac à recyclage? O/N")
     anwser = anwser.upper()
@@ -37,7 +51,14 @@ def info_col(bac1_nom, bac2_nom):
         anwser = input("Entrée inconnue!\nVoulez-vous envoyer le calendrier au bac à recyclage? O/N\n")
         anwser = anwser.upper()  
     return anwser
+"""
+**********************************************
 
+**********************************************
+Fonctions pour les messages de création de fichier et de sa lecture
+Entré: Aucune
+Sortie: Choix sécurisés
+"""
 def titre_fichier():
     titre = input("Quelle titre voulez-vous pour votre fichier txt?")    
     while(titre == False):
@@ -55,7 +76,17 @@ def view_txt():
         anwser = input("Entrée inconnue!\nVoulez-vous consulter votre fichier nouvellement créé? (O/N)\n")
         anwser = anwser.upper() 
     return anwser
+"""
+**********************************************
 
+**********************************************
+Fonction de message pour les fichiers introuvables 
+Entré: Aucune
+Sortie: Aucune
+"""
 def fichier_test():
     print("Le fichier est introuvable!\nRetour au menu principal!")
     return
+"""
+**********************************************
+"""

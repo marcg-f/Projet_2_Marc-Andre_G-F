@@ -3,9 +3,12 @@
 Auteur: Marc-André Grondin-Fournier
 But de la fonction: Créer le titre et écrire/lire d'un fichier texte
 Nom du fichier: écriture_fichier.py
+Entré: Aucune
+Sortie: Choix sécurisés
 **********************************************
 """
 import message
+
 def write_txt():
     anwser = 0
     while(anwser == False):
