@@ -4,7 +4,7 @@ Auteur: Marc-André Grondin-Fournier
 But de la fonction: Créer le titre et écrire/lire d'un fichier texte
 Nom du fichier: écriture_fichier.py
 Entré: Aucune
-Sortie: Choix sécurisés
+Sortie: Aucune
 **********************************************
 """
 import message
@@ -26,3 +26,4 @@ def write_txt():
                 print(ligne)
             file.close()    
     print("Retour au menu principal!")
+    return
