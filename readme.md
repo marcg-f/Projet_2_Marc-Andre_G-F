@@ -21,22 +21,22 @@ La première option recherche dans un fichier de type ics, comme un calendrier d
 
 ### - Fonctionnalités
 
-**Générales** 
-Conversion automatique des minuscules en majuscule pour éviter les erreurs d'entrées des utilisateurs. Protection s'il y a une tentative d'ouverture d'un fichier inexistant.
+**Générales:** 
+ Conversion automatique des minuscules en majuscule pour éviter les erreurs d'entrées des utilisateurs. Protection s'il y a une tentative d'ouverture d'un fichier inexistant.
 
-**Recherche de la prochaine date de collecte** 
-Commence par vérifier la date actuelle. Ensuite, le fichier ics est découpé en lignes et est comparé à la date actuelle. Ainsi, la semaine correspondante à la semaine prochaine sera détecter et son nom est enregistré. L'itération est avorté aussitôt le deuxième bac enregistré.
-Possibilité d'écraser le fichier et d'écrire un message à l'intérieur disant qu'il a été écrasé
+**Recherche de la prochaine date de collecte:** 
+ Commence par vérifier la date actuelle. Ensuite, le fichier ics est découpé en lignes et est comparé à la date actuelle. Ainsi, la semaine correspondante à la semaine prochaine sera détecter et son nom est enregistré. L'itération est avorté aussitôt le deuxième bac enregistré.
+ Possibilité d'écraser le fichier et d'écrire un message à l'intérieur disant qu'il a été écrasé
 
-**Écriture/Lecture d'un fichier texte** 
-Débute par demander un titre pour le fichier texte, ensuite l'utilisateur peut décider d'écrire à l'intérieur. Après, l'utilisateur peut lire son fichier texte.
+**Écriture/Lecture d'un fichier texte:** 
+ Débute par demander un titre pour le fichier texte, ensuite l'utilisateur peut décider d'écrire à l'intérieur. Après, l'utilisateur peut lire son fichier texte.
 
 **Entrées:** 
-Caractères ou nombres
-Fichier ics et txt (avant ouverture)
+ Caractères ou nombres
+ Fichier ics et txt (avant ouverture)
 **Sorties:** 
-Fichier txt en écriture et lecture
-Fichier ics en lecture et écriture
+ Fichier txt en écriture et lecture
+ Fichier ics en lecture et écriture
 
 
 Contient trois librairies de fonctions
