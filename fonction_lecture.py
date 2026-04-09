@@ -1,5 +1,19 @@
+"""
+**********************************************
+Auteur: Marc-André Grondin-Fournier
+But de la fonction: Recherche dans un calendrier et retourne les deux prochains bacs à mettre au chemin
+Nom du fichier: fonction_lecture.py
+**********************************************
+"""
 import datetime
 import message
+
+"""
+**********************************************
+Fonction de traitement de date de calendrier par rapport à la date actuelle
+Entré: Aucune
+Sortie: Aucune
+"""
 def lecture_col():
     ajd = datetime.date.today() #Initialisation/préparation des variables
     ajd = str(ajd)
@@ -32,12 +46,12 @@ def lecture_col():
                     bac1_nom = contenu_ligne[1]
                     bac2_trig = True
                     bac1_found = False
-                elif(contenu_ligne[0] == "SUMMARY" and bac2_found == True):
+                elif(contenu_ligne[0] == "SUMMARY" and bac2_found == True): #Recherche le deuxième bac seulement si le premier est trouvé
                     bac2_nom = contenu_ligne[1]
                     final = True
                     bac2_found = False
                     bac2_trig = False
-                elif(contenu_ligne[0] == "DTSTART" and bac2_trig == False):
+                elif(contenu_ligne[0] == "DTSTART" and bac2_trig == False):#S'active seulement si ça correspond à la date lu plus tôt
                     bac1_time = contenu_ligne[1].split("T")
                     bac1_date = int(bac1_time[0])
                     if(bac1_date >= ajd):
@@ -46,7 +60,7 @@ def lecture_col():
                     bac2_time = contenu_ligne[1].split("T")
                     bac2_date = int(bac2_time[0])
                     if(bac2_date >= ajd):
-                        bac2_found = True
+                        bac2_found = True #Arrête la lecture inutile du restant de fichier
                 elif(final == True) : break
         file.close() 
         delete = message.info_col(bac1_nom, bac2_nom)
