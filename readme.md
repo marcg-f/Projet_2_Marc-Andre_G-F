@@ -31,12 +31,12 @@ La première option recherche dans un fichier de type ics, comme un calendrier d
 **Écriture/Lecture d'un fichier texte:** 
  Débute par demander un titre pour le fichier texte, ensuite l'utilisateur peut décider d'écrire à l'intérieur. Après, l'utilisateur peut lire son fichier texte.
 
-**Entrées:** 
- Caractères ou nombres
- Fichier ics et txt (avant ouverture)
-**Sorties:** 
- Fichier txt en écriture et lecture
- Fichier ics en lecture et écriture
+**- Entrées:** 
+ - Caractères ou nombres
+ - Fichier ics et txt (avant ouverture)
+**- Sorties:** 
+ - Fichier txt en écriture et lecture
+ - Fichier ics en lecture et écriture
 
 
 Contient trois librairies de fonctions
