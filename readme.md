@@ -34,6 +34,7 @@ La première option recherche dans un fichier de type ics, comme un calendrier d
 **- Entrées:** 
  - Caractères ou nombres
  - Fichier ics et txt (avant ouverture)
+  
 **- Sorties:** 
  - Fichier txt en écriture et lecture
  - Fichier ics en lecture et écriture
